@@ -329,10 +329,6 @@ for line in conf:
 
   print >> sys.stderr, lineno, "ERROR, didn't match line : %s" % line
 
-for virt in  sorted(ipbyvirt.keys()):
-  print ipbyvirt[virt] + ':' + virt
-exit()
-
 print 'loaded'
 
 are = re.compile(r'^([0-9]+)-([^\s]+)$')
